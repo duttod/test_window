@@ -1,0 +1,2 @@
+serviceClass: karrus.client.service.GenericDatabaseService
+path: 4EF7BB7B2E66838D8F3127C5CAEBE591.gwt.rpc

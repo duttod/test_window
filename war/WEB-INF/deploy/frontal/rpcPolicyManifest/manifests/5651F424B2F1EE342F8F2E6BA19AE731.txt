@@ -1,0 +1,2 @@
+serviceClass: karrus.client.service.AlarmsDatabaseService
+path: EC037D1EDD98EB33E5CF937C9B4DBF6D.gwt.rpc

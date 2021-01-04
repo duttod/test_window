@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.WthMeteoData" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="wth_meteo_data">
+        <composite-id class="karrus.shared.hibernate.WthMeteoDataId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="station" type="string">
+                <column length="100" name="station"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="temperatureAir" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="temperature_air" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="temperatureDew" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="temperature_dew" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="humidity" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="humidity" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="temperatureRoad" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="temperature_road" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="temperatureBelowSurf" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="temperature_below_surf" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="surfaceState" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="surface_state"/>
+        </property>
+        <property generated="never" lazy="false" name="salinity" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="salinity" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="temperatureFreezing" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="temperature_freezing" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="precipitationType" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="precipitation_type"/>
+        </property>
+        <property generated="never" lazy="false" name="precipitationIntensity" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="precipitation_intensity"/>
+        </property>
+        <property generated="never" lazy="false" name="freezingRisk" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="freezing_risk"/>
+        </property>
+        <property generated="never" lazy="false" name="latency" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="latency"/>
+        </property>
+    </class>
+</hibernate-mapping>

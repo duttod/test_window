@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  
+	<servlet>
+		<servlet-name>remoteLoggingService</servlet-name>
+		<servlet-class>com.google.gwt.gen2.logging.server.RemoteLoggingService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>remoteLoggingService</servlet-name>
+		<url-pattern>/frontal/logging</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>coreServlet</servlet-name>
+		<servlet-class>karrus.server.core.Core</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AlarmsDatabaseServiceServlet</servlet-name>
+		<servlet-class>karrus.server.service.AlarmsDatabaseServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlarmsDatabaseServiceServlet</servlet-name>
+		<url-pattern>/frontal/AlarmsDatabaseService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SynopticDatabaseServiceServlet</servlet-name>
+		<servlet-class>karrus.server.service.SynopticDatabaseServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SynopticDatabaseServiceServlet</servlet-name>
+		<url-pattern>/frontal/SynopticDatabaseService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GenericDatabaseServiceServlet</servlet-name>
+		<servlet-class>karrus.server.service.GenericDatabaseServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericDatabaseServiceServlet</servlet-name>
+		<url-pattern>/frontal/GenericDatabaseService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ConfigurationsDatabaseServiceServlet</servlet-name>
+		<servlet-class>karrus.server.service.ConfigurationsDatabaseServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConfigurationsDatabaseServiceServlet</servlet-name>
+		<url-pattern>/frontal/ConfigurationsDatabaseService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IhmPropertiesServiceServlet</servlet-name>
+		<servlet-class>karrus.server.service.IhmPropertiesServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IhmPropertiesServiceServlet</servlet-name>
+		<url-pattern>/frontal/IhmPropertiesService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ExportServiceServlet</servlet-name>
+		<servlet-class>karrus.server.service.ExportServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExportServiceServlet</servlet-name>
+		<url-pattern>/frontal/ExportService</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ExportCountDataTableServlet</servlet-name>
+		<servlet-class>karrus.server.service.ExportCountDataTableServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExportCountDataTableServlet</servlet-name>
+		<url-pattern>/ExportCountDataTableServlet/*</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+  		<servlet-name>remoteLoggerServiceImpl</servlet-name>
+		<servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServlet</servlet-class>
+		<init-param>
+			<param-name>symbolMaps</param-name>
+			<param-value>WEB-INF\deploy\frontal\symbolMaps\</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>remoteLoggerServiceImpl</servlet-name>
+		<url-pattern>/frontal/gwt-log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>EventService</servlet-name>
+        <servlet-class>de.novanic.eventservice.service.EventServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventService</servlet-name>
+        <url-pattern>/frontal/gwteventservice</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ClockService</servlet-name>
+        <servlet-class>karrus.server.service.ClockServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClockService</servlet-name>
+        <url-pattern>/frontal/ClockService</url-pattern>
+    </servlet-mapping>
+	
+	<context-param>
+   		<!-- max size of the upload request -->
+    	<param-name>maxSize</param-name>
+    	<param-value>3145728</param-value>
+  	</context-param>
+  	<context-param>
+    	<!-- Useful in development mode to slow down the uploads in fast networks.
+        Put the number of milliseconds to sleep in each block received in the server.
+        false or 0, means don't use slow uploads  -->
+    	<param-name>slowUploads</param-name>
+    	<param-value>200</param-value>
+  	</context-param>
+
+  	<servlet>
+    	<servlet-name>uploadServlet</servlet-name>
+    	<!-- This is the default servlet, it puts files in session -->
+    	<servlet-class>karrus.server.service.referential.UploadReferentialServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>uploadServlet</servlet-name>
+    	<url-pattern>*.gupld</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-name>DownloadReferentialServlet</servlet-name>
+		<servlet-class>
+			karrus.server.service.referential.DownloadReferentialServlet
+        </servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DownloadReferentialServlet</servlet-name>
+		<url-pattern>
+			/referential/*
+        </url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>syncro.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

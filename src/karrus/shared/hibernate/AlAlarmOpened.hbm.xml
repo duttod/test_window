@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.AlAlarmOpened" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="al_alarm_opened">
+        <composite-id class="karrus.shared.hibernate.AlAlarmOpenedId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="openingTimestamp" type="timestamp">
+                <column length="35" name="opening_timestamp"/>
+            </key-property>
+            <key-property name="type" type="string">
+                <column length="100" name="type"/>
+            </key-property>
+            <key-property name="source" type="string">
+                <column length="100" name="source"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="acknowledgementTimestamp" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="35" name="acknowledgement_timestamp"/>
+        </property>
+        <property generated="never" lazy="false" name="status" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="status" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

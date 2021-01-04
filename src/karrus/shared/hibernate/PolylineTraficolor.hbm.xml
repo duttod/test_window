@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 16 déc. 2019 10:13:38 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.PolylineTraficolor" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="polyline_traficolor">
+        <composite-id class="karrus.shared.hibernate.PolylineTraficolorId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="originDest" type="string">
+                <column name="origin_dest"/>
+            </key-property>
+            <key-property name="zoomLevel" type="string">
+                <column name="zoom_level"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="listOfLatlngs" optimistic-lock="true" type="string" unique="false">
+            <column name="List_of_latlngs" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

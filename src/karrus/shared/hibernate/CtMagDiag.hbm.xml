@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.CtMagDiag" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ct_mag_diag">
+        <composite-id class="karrus.shared.hibernate.CtMagDiagId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="id" type="string">
+                <column length="16" name="id"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="count" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="count"/>
+        </property>
+        <property generated="never" lazy="false" name="occupancy" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="occupancy" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="batteryLevel" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="battery_level" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="rssiAverage" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="rssi_average" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="rssiStd" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="rssi_std" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="lqiAverage" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="lqi_average" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="lqiStd" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="lqi_std" precision="17" scale="17"/>
+        </property>
+    </class>
+</hibernate-mapping>

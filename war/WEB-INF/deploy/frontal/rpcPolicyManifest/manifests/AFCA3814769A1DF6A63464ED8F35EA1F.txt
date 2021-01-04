@@ -1,0 +1,2 @@
+serviceClass: karrus.client.service.SynopticDatabaseService
+path: CD35D2D27C2EE8C54FCAC728007C5464.gwt.rpc

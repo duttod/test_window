@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.LfConf" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="lf_conf">
+        <id name="var" type="string">
+            <column name="var"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="value" optimistic-lock="true" type="string" unique="false">
+            <column name="value"/>
+        </property>
+    </class>
+</hibernate-mapping>

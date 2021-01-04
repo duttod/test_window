@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.RsuDiag" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="rsu_diag">
+        <composite-id class="karrus.shared.hibernate.RsuDiagId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="station" type="string">
+                <column length="100" name="station"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="powerMode" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="power_mode"/>
+        </property>
+        <property generated="never" lazy="false" name="batteryLevel" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="battery_level" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="temperatureInternal" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="temperature_internal" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="load" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="load" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="memory" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="memory" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="cellularRssi" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="cellular_rssi" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="v2xRssi" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="v2x_rssi" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="btRssi" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="bt_rssi" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="gpsLatitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="gps_latitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="gpsLongitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="gps_longitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="gpsHdop" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="gps_hdop" precision="17" scale="17"/>
+        </property>
+    </class>
+</hibernate-mapping>

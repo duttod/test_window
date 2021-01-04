@@ -1,0 +1,11 @@
+# Module frontal
+# RPC service class, partial path of RPC policy file
+karrus.client.service.IhmPropertiesService, CE1468EC5CB08658AD0076D81BFFDAE4.gwt.rpc
+karrus.client.service.ClockService, 2EB90F4384FDA7869D5D50FBED24A6B3.gwt.rpc
+de.novanic.eventservice.client.event.service.EventService, 7949AFEA65F050F1811B995C6547A278.gwt.rpc
+karrus.client.service.AlarmsDatabaseService, EC037D1EDD98EB33E5CF937C9B4DBF6D.gwt.rpc
+karrus.client.service.ConfigurationsDatabaseService, B01ED636FB56B32DE1D279EF17213033.gwt.rpc
+karrus.client.service.GenericDatabaseService, 4EF7BB7B2E66838D8F3127C5CAEBE591.gwt.rpc
+com.allen_sauer.gwt.log.client.RemoteLoggerService, 9395117A7B8A08800A042BDFFE48FE8C.gwt.rpc
+karrus.client.service.SynopticDatabaseService, CD35D2D27C2EE8C54FCAC728007C5464.gwt.rpc
+karrus.client.service.ExportService, 482571A11457F1BBB63807FC5E4EEAE1.gwt.rpc

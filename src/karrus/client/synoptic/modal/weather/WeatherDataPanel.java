@@ -1,0 +1,36 @@
+package karrus.client.synoptic.modal.weather;
+
+import karrus.client.generic.plot.CountDataTimeSeriesPlot;
+import karrus.client.generic.plot.PlotType;
+import karrus.client.appearance.Css;
+
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+
+
+
+/**
+ * Creates a panel containing a plot for weather data.
+ * The plots are displayed in real time.
+ * 
+ * @author estelle.dumas@karrus-its.com
+ */
+public class WeatherDataPanel extends Composite{
+
+	private HorizontalPanel panel;
+	
+	/**
+	 * Constructor
+	 * @param weatherDataDashboard
+	 * @param width
+	 * @param height
+	 */
+	public WeatherDataPanel(WeatherDataDashboard weatherDataDashboard, int width, int height){
+		panel = new HorizontalPanel();
+		this.initWidget(panel);
+		CountDataTimeSeriesPlot timeSeriesPlot = new CountDataTimeSeriesPlot(this,"", width, height - 25, PlotType.STEP, false, true, true, false);
+		timeSeriesPlot.setStyleName(Css.trafficsPlotStyle);
+		panel.add(timeSeriesPlot);
+		weatherDataDashboard.addTimeSeriesForDataDashboard(timeSeriesPlot);
+	}
+}

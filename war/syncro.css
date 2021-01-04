@@ -1,0 +1,373 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.flextable td {
+	padding : 5px;
+	border : solid 0px black;
+}
+
+.headerStyle {
+  	font-weight: bold;
+  	color: black !important;
+  	text-shadow: 0px 0px grey !important;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.timeLabel {
+	font-weight: bold;
+	color:orange;
+	padding-left:5px;
+}
+
+.disconnection {
+	font-weight: bold;
+	color:red;
+	padding-left:5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.textLeftAlign {
+	text-align: left;
+}
+
+.bordered {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.bordered2 {
+	border: 1px solid black;
+	padding : 0px !important;
+	/*background-color: #92C1F0;*/
+}
+
+.bordered3 {
+	border: 1px solid black;
+}
+
+.bordered4 {
+	border: 0px solid black;
+	background-color: yellow;
+}
+
+.padding-top {
+	/*border : 1px solid black;*/
+	padding-top : 30px;
+}
+
+.nomargin {
+	margin: 0px !important;
+	padding: 0px;
+}
+
+.cursorAuto{
+	cursor: auto;
+}
+
+.captionInDialogBox{ /* ok */
+	padding: 5px;
+	border-bottom: 2px solid #92C1F0;
+	cursor: move;	
+}
+
+.titleLeftLabel{
+	font-weight: bold;
+	text-align: left;	
+}
+
+.leftPanel {
+    background: url(texture.png);
+}
+
+
+.menuItemTitleLabel {
+	background-color: #92C1F0;
+	border : 2px solid #FFFFFF;	
+	font-size: 14pt;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.clickableLabel{
+	background-color: #92C1F0;
+	border : 2px solid #FFFFFF;	
+	cursor: pointer;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;
+}
+
+.subItemclickableLabel{	
+	cursor: pointer;
+	font-size: 12pt;
+	color: black;
+	text-align: center;
+	background-color: #BCE7F1;
+	border : 2px solid #FFFFFF;	
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.boldAndBottomPadding {
+	font-weight: bold;
+	padding-bottom : 8px;
+}
+
+.bottomPadding {
+	padding-bottom : 12px;
+}
+
+.largeBold{
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+.dialogBox { /* ok */
+	border: 2px solid #92C1F0;
+	padding: 10px;
+	background-color: #DFEDFB;
+}
+
+.titleLabel{
+	font-weight: bold;
+	text-align: center;	
+}
+
+.gwt-DecoratedTabBar {
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarFirst {
+  width: 5px;  /* first tab distance from the left */
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarRest {
+	width: 20px;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem {
+  border-collapse: collapse;
+  height: 20px;
+  margin-left: 6px;
+  white-space: nowrap;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.gwt-DecoratedTabBar .tabTopCenter {
+  padding: 0px;
+  background: #d0e4f6;
+}
+
+.gwt-DecoratedTabBar .tabTopLeft,
+.gwt-DecoratedTabBar .tabTopRight {
+  padding: 0px;
+  zoom: 1;
+}
+
+.gwt-DecoratedTabBar .tabTopLeftInner,
+.gwt-DecoratedTabBar .tabTopRightInner {
+  width: 6px;
+  height: 6px;
+}
+
+.gwt-DecoratedTabBar .tabTopLeft {
+  background: url(images/corner.png) no-repeat 0px -55px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -55px;
+}
+
+.gwt-DecoratedTabBar .tabTopRight {
+  background: url(images/corner.png) no-repeat -6px -55px;
+  -background: url(images/corner_ie6.png) no-repeat -6px -55px;
+}
+
+.gwt-DecoratedTabBar .tabMiddleLeft,
+.gwt-DecoratedTabBar .tabMiddleRight {
+  width: 6px;
+  padding: 0px;
+  background: #d0e4f6;
+}
+
+.gwt-DecoratedTabBar .tabMiddleLeftInner,
+.gwt-DecoratedTabBar .tabMiddleRightInner {
+  width: 1px;
+  height: 1px;
+}
+
+.gwt-DecoratedTabBar .tabMiddleCenter {
+  padding: 0px 4px 2px 4px;
+  cursor: pointer;
+  cursor: hand;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background: #d0e4f6;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopCenter {
+  background: #92c1f0;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopLeft {
+  background-position: 0px -61px;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopRight {
+  background-position: -6px -61px;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleLeft,
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleRight {
+  background: #92c1f0;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleCenter {
+  cursor: default;
+  background: #92c1f0;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-disabled{
+  background: #1a8cff!important;
+  color : black !important;
+}
+
+html>body .gwt-DecoratedTabBar {
+}
+
+* html .gwt-DecoratedTabBar .tabTopLeftInner,
+* html .gwt-DecoratedTabBar .tabTopRightInner {
+  width: 6px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.NoBorderTabPanelBottom {
+  border-color: #92c1f0;
+  border-style: solid;
+  border-width: 0px 0px 0px;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.selectedRow{
+	background: #BAD8F5;
+    color: black;
+}
+
+
+/*
+ * ScrollTable
+ */
+
+.gwt-ScrollTable {
+  border: 1px solid black;
+}
+
+.gwt-ScrollTable .headerWrapper {
+  background-color: #92C1F0 ;
+  border: 1px solid black;
+  
+}
+
+.gwt-ScrollTable .footerWrapper {
+  border-top: 1px solid #aaa;
+  background: #8bd url(images/bg_header_gradient.gif) repeat-x bottom left;
+}
+
+.gwt-ScrollTable .dataTable td,
+.gwt-ScrollTable .headerTable td,
+.gwt-ScrollTable .footerTable td {
+  border: 1px solid black;
+  white-space: normal;
+  overflow: scroll;
+  border-spacing: 0px;
+  padding: 0px;
+}
+
+}
+.gwt-ScrollTable .dataTable) {
+  background-color: #ffffff;
+}
+        
+.gwt-ScrollTable .dataTable tr.highlighted {
+  background: #DFEDFB;
+  color: black;
+}
+
+.gwt-ScrollTable .dataTable td.highlighted {
+  
+  cursor: hand;
+  cursor: pointer;
+  color: black;
+}
+
+.orangeBackgroundStyle{
+	background: #FFAD33;
+    color: black;
+}
+
+.blackBackgroundStyle{
+	background: #C0C0C0;
+    color: black;
+}
+
+.redBackgroundStyle{
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Arial, "Times New Roman";
+	text-align: center;
+	background-color: #ff0000;
+}
+
+.serverInstanceBarStyle {
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: Arial, "Times New Roman";
+	text-align: center;
+	background-color: #92C1F0;
+	border : 2px solid #FFFFFF;	
+	color: #666666;
+}
+

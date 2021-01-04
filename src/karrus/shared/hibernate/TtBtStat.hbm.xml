@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.TtBtStat" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="tt_bt_stat">
+        <composite-id class="karrus.shared.hibernate.TtBtStatId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="origin" type="string">
+                <column length="45" name="origin"/>
+            </key-property>
+            <key-property name="destination" type="string">
+                <column length="45" name="destination"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="sampleSize" optimistic-lock="true" type="int" unique="false">
+            <column name="sample_size" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="sampleSize5Min" optimistic-lock="true" type="int" unique="false">
+            <column name="sample_size_5_min" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="minTravelTime" optimistic-lock="true" type="int" unique="false">
+            <column name="min_travel_time" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="maxTravelTime" optimistic-lock="true" type="int" unique="false">
+            <column name="max_travel_time" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="average" optimistic-lock="true" type="int" unique="false">
+            <column name="average" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="standardDeviation" optimistic-lock="true" type="float" unique="false">
+            <column name="standard_deviation" not-null="true" precision="8" scale="8"/>
+        </property>
+        <property generated="never" lazy="false" name="decile10" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_10" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile20" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_20" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile30" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_30" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile40" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_40" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="median" optimistic-lock="true" type="int" unique="false">
+            <column name="median" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile60" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_60" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile70" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_70" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile80" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_80" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="decile90" optimistic-lock="true" type="int" unique="false">
+            <column name="decile_90" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.RsuStation" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="rsu_station">
+        <id name="id" type="string">
+            <column length="100" name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="serial" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="serial" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="host" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="host" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="latitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="latitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="longitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="longitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="road" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="road"/>
+        </property>
+        <property generated="never" lazy="false" name="position" optimistic-lock="true" type="string" unique="false">
+            <column length="7" name="position"/>
+        </property>
+        <property generated="never" lazy="false" name="cycleCountingSec" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="cycle_counting_sec"/>
+        </property>
+        <property generated="never" lazy="false" name="cycleTravelTimeSec" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="cycle_travel_time_sec"/>
+        </property>
+        <property generated="never" lazy="false" name="cycleWeatherSec" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="cycle_weather_sec"/>
+        </property>
+        <property generated="never" lazy="false" name="cycleV2xSec" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="cycle_v2x_sec"/>
+        </property>
+    </class>
+</hibernate-mapping>

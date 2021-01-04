@@ -1,0 +1,2 @@
+serviceClass: karrus.client.service.ClockService
+path: 2EB90F4384FDA7869D5D50FBED24A6B3.gwt.rpc

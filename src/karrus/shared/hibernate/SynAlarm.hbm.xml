@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.SynAlarm" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="syn_alarm">
+        <composite-id class="karrus.shared.hibernate.SynAlarmId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="synopticId" type="string">
+                <column length="100" name="synoptic_id"/>
+            </key-property>
+            <key-property name="itemId" type="string">
+                <column length="100" name="item_id"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="type" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="type" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="source" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="source" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

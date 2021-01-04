@@ -1,0 +1,2 @@
+serviceClass: karrus.client.service.IhmPropertiesService
+path: CE1468EC5CB08658AD0076D81BFFDAE4.gwt.rpc

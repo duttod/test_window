@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">postgres</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://karrus-its.com:11432/syncro</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.default_schema">public</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="karrus/shared/hibernate/AlAlarmClosed.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/RsuStation.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/CtLane.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/WthMorsDiag.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/LfPolyline.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/PopupInfo.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/Pmv.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynAlarm.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/CtRpDiag.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynWeatherDisplay.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/LfConf.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/CtMagDiag.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtBtBox.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/LfEquipement.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/V2xAlarm.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SysEnv.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynRdtColor.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynTtColor.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/RsuDiag.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtBtMacArchive.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/UsrCredential.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/LfMarker.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/CtCountDataLast.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/CtCountData.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtBtStatLast.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynWeatherStation.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/WthMeteoData.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynTtDisplay.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/AlAlarmOpened.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/SynRdtDisplay.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtBtItt.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/UsrUser.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtItinerary.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/LfFonction.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtBtMacRt.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/Camera.hbm.xml"/>
+        <mapping resource="karrus/shared/hibernate/TtBtStat.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.V2xAlarm" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="v2x_alarm">
+        <composite-id class="karrus.shared.hibernate.V2xAlarmId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="station" type="string">
+                <column length="100" name="station"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="type" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="type"/>
+        </property>
+        <property generated="never" lazy="false" name="code" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="code"/>
+        </property>
+        <property generated="never" lazy="false" name="idEvent" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="id_event"/>
+        </property>
+        <property generated="never" lazy="false" name="idVehicule" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="id_vehicule"/>
+        </property>
+        <property generated="never" lazy="false" name="gpsLatitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="gps_latitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="gpsLongitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="gps_longitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="status" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="status"/>
+        </property>
+        <property generated="never" lazy="false" name="text" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="text"/>
+        </property>
+    </class>
+</hibernate-mapping>

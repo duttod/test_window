@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.Camera" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="camera">
+        <id name="id" type="string">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="longitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="longitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="latitude" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="latitude" precision="17" scale="17"/>
+        </property>
+        <property generated="never" lazy="false" name="fluxRtsp" optimistic-lock="true" type="string" unique="false">
+            <column name="flux_rtsp"/>
+        </property>
+        <property generated="never" lazy="false" name="streamingUrl" optimistic-lock="true" type="string" unique="false">
+            <column name="streaming_url"/>
+        </property>
+        <property generated="never" lazy="false" name="ip" optimistic-lock="true" type="string" unique="false">
+            <column name="ip"/>
+        </property>
+        <property generated="never" lazy="false" name="snapshotFrequencys" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="snapshot_frequencys"/>
+        </property>
+        <property generated="never" lazy="false" name="lastSnapshot" optimistic-lock="true" type="string" unique="false">
+            <column name="last_snapshot"/>
+        </property>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column name="name"/>
+        </property>
+        <property generated="never" lazy="false" name="snapshotDeleteOlderThanMin" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="snapshot_delete_older_than_min"/>
+        </property>
+        <property generated="never" lazy="false" name="streamingActive" optimistic-lock="true" type="java.lang.Boolean" unique="false">
+            <column name="streaming_active"/>
+        </property>
+        <property generated="never" lazy="false" name="snapshotDelay" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="snapshot_delay"/>
+        </property>
+        <property generated="never" lazy="false" name="port" optimistic-lock="true" type="string" unique="false">
+            <column name="port"/>
+        </property>
+    </class>
+</hibernate-mapping>

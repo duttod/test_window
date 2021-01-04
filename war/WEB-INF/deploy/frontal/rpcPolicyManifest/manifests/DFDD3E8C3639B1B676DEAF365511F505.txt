@@ -1,0 +1,2 @@
+serviceClass: karrus.client.service.ExportService
+path: 482571A11457F1BBB63807FC5E4EEAE1.gwt.rpc

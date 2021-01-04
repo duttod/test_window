@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.TtItinerary" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="tt_itinerary">
+        <composite-id class="karrus.shared.hibernate.TtItineraryId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="origin" type="string">
+                <column length="100" name="origin"/>
+            </key-property>
+            <key-property name="destination" type="string">
+                <column length="100" name="destination"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="name"/>
+        </property>
+        <property generated="never" lazy="false" name="nominalTravelTime" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="nominal_travel_time"/>
+        </property>
+        <property generated="never" lazy="false" name="maxTravelTime" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="max_travel_time"/>
+        </property>
+        <property generated="never" lazy="false" name="levelOfServiceThreshold1" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="level_of_service_threshold_1"/>
+        </property>
+        <property generated="never" lazy="false" name="levelOfServiceThreshold2" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="level_of_service_threshold_2"/>
+        </property>
+        <property generated="never" lazy="false" name="scale" optimistic-lock="true" type="int" unique="false">
+            <column name="scale" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

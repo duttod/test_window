@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated 28 janv. 2020 16:50:07 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="karrus.shared.hibernate.TtBtMacRt" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="tt_bt_mac_rt">
+        <composite-id class="karrus.shared.hibernate.TtBtMacRtId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="macSecret" type="string">
+                <column length="32" name="mac_secret"/>
+            </key-property>
+            <key-property name="timestamp" type="timestamp">
+                <column length="35" name="timestamp"/>
+            </key-property>
+            <key-property name="rssi" type="int">
+                <column name="rssi"/>
+            </key-property>
+        </composite-id>
+        <property generated="never" lazy="false" name="class_" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="class"/>
+        </property>
+        <property generated="never" lazy="false" name="station" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="station" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
